@@ -3,11 +3,11 @@
 <html lang="en">
 
 <head>
-    <title>HTML, CSS & Git Basics (CV)</title>
+    <title>CV: HTML & CSS</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap">
 </head>
 
 <body>
@@ -22,9 +22,11 @@
             <aside class="name">
                 <h2>Fedorovich Vadim</h2><br>
                 <h3>Contacts:</h3>
-                <p>Phone number: +375292689502</p>
-                <p>E-mail: vadimfedorovich22@mail.ru</p>
-                <a href="https://vk.com/gnarl_s"><img class="vk" src="images/vk.png" alt="link"></a>
+                <ul>
+                    <li><p>Phone number: +375292689502</p></li>
+                    <li><p>E-mail: vadimfedorovich22@mail.ru</p></li>
+                    <li><a href="https://vk.com/gnarl_s"><img class="vk" src="images/vk.png" alt="link"></a></li>
+                </ul>
             </aside>
         </div>
         
@@ -78,7 +80,8 @@
             let min = arr[0].length;
         
             for(let word of arr) {
-                    if(word.length &lt; min) min = word.length;
+                    if(word.length &lt; min)
+                     min = word.length;
                 } 
                 return min;
             };
@@ -88,7 +91,11 @@
     </main>
 
     <footer>
-        <p>Made by Fedorovich Vadim &#169;</p>
+        <div class="footer-box">
+            <p class="footer-inscription">Site was made in 2021. Useful links:</p>
+            <a href="https://github.com/Gnarll"><img class="github-img" src="/images/github.png" alt="My GitHub"></a>
+            <a href="https://rs.school/js/"><img src="/images/rs-school.png" alt="RS-school"></a>
+        </div> 
     </footer>
     
 </body>

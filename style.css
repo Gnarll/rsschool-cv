@@ -6,6 +6,7 @@ body{
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(228, 203, 95, .5);
+    min-width: 300px;
 }
 
 header {
@@ -13,8 +14,8 @@ header {
     height: 60px;
     padding-top: 25px;
     font-family: 'Akaya Telivigala', cursive;
-    color: #fff;
-    background-color: rgba(1, 252, 252, 0.5);
+    color: rgb(255, 255, 255);
+    background-color: rgba(1, 252, 252);
 }
 
 main {
@@ -34,13 +35,13 @@ main {
 }
 
 .character {
-    border-radius: 50px;
     width: 250px;
     height: 250px;
 }
 
 .vk {
-    margin-top: 5px;
+    position: relative;
+    top: 7px;
     width: 30px;
     height: 30px;
 }
@@ -56,19 +57,39 @@ li {
     list-style-type: square;
 }
 
-.code-example {
-    position: relative;
+.code-example { 
+    border-radius: 20px 0 20px 0;
     padding: 10px;
-    background-color:  rgb(228, 203, 95, 0.6) ;
+    background-color:  rgb(228, 203, 95, .6) ;
+    min-width: 300px;
 }
 
 footer {
     display: flex;
-    height: 50px;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    height: 120px;
+    width: 100%;
     margin-top: 10px;
-    background-color: rgba(1, 252, 252, 0.5);
-    color: #fff;
+    background-color: rgba(1, 252, 252);
+    color: rgb(255, 255, 255);
 }
+
+.github-img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+
+.footer-inscription {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: large;
+}
+ 
